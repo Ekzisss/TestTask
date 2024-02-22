@@ -15,7 +15,6 @@ export default async function (action: string, params: unknown) {
     return res.data.result;
   } catch (err) {
     console.log(err);
-    alert('INTERNAL SERVER ERROR');
   }
 }
 
