@@ -8,7 +8,7 @@ export default async function (action: string, params: unknown) {
       { action: action, params: params },
       {
         headers: {
-          'X-Auth': md5(`${import.meta.env.VITE_API_KEY}_${getDate()}`),
+          'X-Auth': md5(`${import.meta.env.VITE_API_KEY || 'Valantis'}_${getDate()}`),
         },
       }
     );
