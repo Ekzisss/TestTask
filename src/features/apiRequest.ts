@@ -4,7 +4,7 @@ import axios from 'axios';
 export default async function (action: string, params: unknown) {
   try {
     const res = await axios.post(
-      'http://api.valantis.store:40000/',
+      'https://api.valantis.store:41000/',
       { action: action, params: params },
       {
         headers: {
